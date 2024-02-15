@@ -18,19 +18,19 @@
 
 /*Jumbotron Section */
 .jumbotron {
-  background-color: rgba(6, 6, 126, 0.788);
+  background-color: rgb(162, 191, 204);
   color: white;
   padding: 100px 20px;
   margin-bottom: 0;
 
   .j1{
-    color:rgb(50, 159, 196);
+    color:rgb(1, 12, 15);
     font-size: 54px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:600;
   }
   .j2{
-    color:wheat;
+    color:rgb(20, 14, 2);
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
@@ -140,7 +140,7 @@
 
 /* About Section */
 #about{   
-  background-color:rgba(245, 222, 179, 0.726);
+  background-color:rgb(226, 233, 236);
 
 .A1{
 text-align: center;
@@ -281,7 +281,9 @@ border-color: #5f9ea0;
         <img src="Assets/logo.png" style="height: 80px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon custom-navbar-toggler-icon"></span>
+    </button>
+    
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -532,19 +534,27 @@ border-color: #5f9ea0;
   </footer>
 
  
-  <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
   
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+  
+ <!-- Bootstrap JS a -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <!-- custom JavaScript code here -->
+ 
+ <script>
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
       });
     });
-  </script>
-  
+  });
+</script>
 
 </body>
 </html>
