@@ -284,9 +284,16 @@ border-color: #5f9ea0;
 @media screen and (max-width:767px) {
 
 
-  .menu-icon{
-    font-size: 50px;
+  navbar-toggler-icon{
+    nav-down: auto;
+  }
+  .custom-navbar-toggler-icon{
+    font-size: 10px;
     padding-left: 5px;
+  }
+
+  .bi{
+    font-size: 40px;
   }
 
 
@@ -341,8 +348,8 @@ text-align: center;
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="menu-icon">☰</span>
         <span class="navbar-toggler-icon custom-navbar-toggler-icon"></span>
+        <i class="bi bi-three-dots-vertical"></i>
     </button>
     
       </button>
@@ -360,8 +367,7 @@ text-align: center;
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          
+          </li>          
         </ul>
       </div>
     </div>
