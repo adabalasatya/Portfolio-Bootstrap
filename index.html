@@ -6,125 +6,286 @@
   <title>Satya Adabala</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <style>
-    /* Navbar Section */
-    .nav-item{
-      font-size: 18px;
-      font-weight: 600;
-    }
 
-    /* Jumbotron Section */
-    .jumbotron {
-      background-color: rgba(6, 6, 126, 0.788);
-      color: white;
-      padding: 80px 20px;
-      margin-bottom: 0;
-    }
+ <style>
 
-    .j1 {
-      font-size: 36px;
-      font-weight: 600;
-    }
+  /*Navbar Section */
+.nav-item{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
 
-    .j2 {
-      font-size: 18px;
-      font-weight: 400;
-    }
+/*Jumbotron Section */
+.jumbotron {
+  background-color: rgba(6, 6, 126, 0.788);
+  color: white;
+  padding: 100px 20px;
+  margin-bottom: 0;
 
-    /* Profile Section */
-    #profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
+  .j1{
+    color:rgb(50, 159, 196);
+    font-size: 54px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+  }
+  .j2{
+    color:wheat;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+  }
+}
 
-    .section__pic-container img {
-      max-width: 100%;
-      height: auto;
-    }
+/* PROFILE SECTION */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
 
-    .section__text p {
-      font-weight: 600;
-    }
+  .section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
 
-    .section__text__p2 {
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-    }
+.section__text {
+  align-self: center;
+  text-align: center;
+}
 
-    #socials-container {
-      margin-top: 1rem;
-    }
+.section__text p {
+  font-weight: 600;
+}
 
-    /* About, Skills, Projects, and Contact Sections */
-    section {
-      padding: 40px 20px;
-    }
+.section__text__p1 {
+  text-align: center;
+}
 
-    .A1, .section-title, .section-title1 {
-      font-size: 24px;
-      font-weight: 600;
-      color: rgb(13, 172, 13);
-      margin-bottom: 20px;
-    }
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
 
-    .a1, .section-title2, .section-title3 {
-      font-size: 16px;
-      font-weight: 400;
-    }
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
 
-    .card {
-      margin-bottom: 30px;
-    }
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
 
-    .card-title {
-      font-size: 20px;
-      font-weight: bold;
-    }
+/* ICONS */
 
-    .card-subtitle {
-      font-size: 14px;
-      font-weight: 600;
-      color: cadetblue;
-    }
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
 
-    .btn-primary {
-      background-color: cadetblue;
-      border-color: cadetblue;
-      font-size: 14px;
-      font-weight: 600;
-    }
+/* BUTTONS */
 
-    .btn-primary:hover {
-      background-color: #5f9ea0;
-      border-color: #5f9ea0;
-    }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 
-    /* Footer */
-    footer {
-      background-color: #343a40;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
 
-  </style>
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+}
+
+/* About Section */
+#about{   
+  background-color:rgba(245, 222, 179, 0.726);
+
+.A1{
+text-align: center;
+font-size: 40px;
+font-weight: 400;
+font-family: Arial, Helvetica, sans-serif;
+}
+.a1{
+text-align: center;
+padding-left: 100px;
+font-weight: 500;
+font-size: 20px;
+font-family: "Encode Sans",sans-serif;
+}
+}
+
+/* Skills Section */
+#skills {
+background-color: lightcyan; 
+padding: 60px 0; 
+
+.skill {
+text-align: center;
+margin-bottom: 50px; 
+color: #333; 
+}
+
+.card {
+border: none; 
+border-radius: 10px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: transform 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px); 
+}
+
+.card-title {
+font-size: 1.5rem; 
+font-weight: bold; 
+}
+
+.card-text {
+font-size: 1rem; 
+color: #555; 
+}
+
+.mb-4 {
+margin-bottom: 30px;
+}
+
+}
+
+
+/* Projects Section */
+#projects {
+padding: 60px 0;
+background-color: lightblue; 
+
+.section-title {
+text-align: center; 
+margin-bottom: 40px; 
+}
+
+.card {
+border: none; 
+border-radius: 10px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: transform 0.3s ease; 
+}
+
+.card:hover {
+transform: translateY(-5px); 
+}
+
+.card-title {
+font-size: 1.2rem; 
+font-weight: bold; 
+margin-bottom: 10px; 
+}
+
+.card-subtitle {
+color: cadetblue; 
+font-weight: 800; 
+}
+
+.card-text {
+font-size: 0.9rem; 
+color: #555; 
+}
+
+.btn-primary {
+background-color: cadetblue;
+border-color: cadetblue; 
+}
+
+.btn-primary:hover {
+background-color: #5f9ea0; 
+border-color: #5f9ea0; 
+}
+}
+
+/*Contact Section */
+
+#contact{
+  background-color:lavender;
+  .section-title1{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 25px;
+  }
+  .section-title2{
+    color: #333;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  .section-title3{
+    list-style-type: none;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+ </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ 
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="Assets/logo.png" style="height: 50px;" alt="Logo">
+        <img src="Assets/logo.png" style="height: 80px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
@@ -137,6 +298,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
           </li>
+          
         </ul>
       </div>
     </div>
@@ -145,142 +307,185 @@
   <!-- Jumbotron -->
   <div class="jumbotron">
     <div class="container text-center">
-      <h1 class="j1">Welcome to My Portfolio</h1>
-      <p class="j2">Showcasing my projects and skills</p>
+      <h1 class="j1 display-4">Welcome to My Portfolio</h1>
+      <p class="j2 lead">Showcasing my projects and skills</p>
     </div>
+
   </div>
 
   <!-- Info Section -->
   <section id="profile">
     <div class="section__pic-container">
-      <img src="Assets/img.png" alt="Satya profile picture">
+      <img src="Assets/img.png" alt="Satya profile picture" />
     </div>
     <div class="section__text">
-      <p>Hello, I'm</p>
-      <h1>Satya Adabala</h1>
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Satya Adabala</h1>
       <p class="section__text__p2">Frontend Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./Assets/Resume.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./Assets/Resume.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
       </div>
       <div id="socials-container">
+
         <a href="https://www.linkedin.com/in/satya1adabala/?trk=public-profile-join-page" target="_blank">
           <img src="Assets/linkedin.svg" alt="My LinkedIn profile" class="icon">
+      </a>
+          <a href="https://github.com/adabalasatya" target="_blank">
+            <img src="Assets/github.svg" alt="My Github profile" class="icon">
         </a>
-        <a href="https://github.com/adabalasatya" target="_blank">
-          <img src="Assets/github.svg" alt="My Github profile" class="icon">
-        </a>
+         
       </div>
+
     </div>
   </section>
 
+
   <!-- About Section -->
+  <p style="color: black; text-align: center; font-weight: 600; font-size: 24px;">Get To Know More</p>
   <section id="about">
-    <div class="container text-center">
-      <h2 class="A1">About Me</h2>
-      <p class="a1">As a passionate frontend developer, I am dedicated to creating intuitive, visually appealing, and user-friendly experiences on the web. With a blend of creativity and technical expertise, I strive to transform ideas into dynamic digital solutions.</p>
-      <h2 class="A1">My Journey</h2>
-      <p class="a1">My journey into the world of web development began with a curiosity sparked by the endless possibilities of the internet. I embarked on this path with a determination to master the intricacies of frontend technologies and design principles. Through continuous learning and hands-on experience, I have honed my skills in HTML, CSS, JavaScript, and various frontend frameworks and libraries.</p>
-      <h2 class="A1">What I Do</h2>
-      <p class="a1">I specialize in crafting responsive and engaging user interfaces that elevate the browsing experience across devices. Whether it's developing interactive websites, building mobile applications, or optimizing web performance, I am committed to delivering solutions that exceed expectations.</p>
-      <h2 class="A1">My Approach</h2>
-      <p class="a1">Collaboration lies at the heart of my process. I believe in working closely with clients and stakeholders to understand their goals and translate them into actionable strategies. By embracing innovation and staying abreast of industry trends, I ensure that my work remains cutting-edge and impactful.</p>
-      <p class="a1">Thank you for visiting my portfolio. I look forward to the possibility of working together.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <div class="aboutme m-4">
+            <h1 class="A1">About<span style="color: rgb(13, 172, 13);"> ME</span></h1>
+            <p class="a1" >As a passionate frontend developer, I am dedicated to creating intuitive, 
+              visually appealing, and user-friendly experiences on the web. 
+              With a blend of creativity and technical expertise, 
+              I strive to transform ideas into dynamic digital solutions.</p>
+        </div>
+
+            <div class="myJourney m-4">
+                <h1 class="A1">My<span style="color: rgb(13, 184, 13);">Journey</span></h1>
+                <p class="a1">My journey into the world of web development began with a curiosity sparked by the endless possibilities of the internet. I embarked on this path with a determination to master the intricacies of frontend technologies and design principles. Through continuous learning and hands-on experience,
+                   I have honed my skills in HTML, CSS, JavaScript, and various frontend frameworks and libraries.</p>
+        </div>
+      
+        <div class="whatido m-4">
+                <h1 class="A1">What<span style="color: rgb(13, 187, 13);"> I Do</span></h1>
+                <p class="a1">I specialize in crafting responsive and engaging user interfaces that elevate the browsing experience across devices.
+                   Whether it's developing interactive websites, building mobile applications, or optimizing web performance, 
+                   I am committed to delivering solutions that exceed expectations.</p>
+        </div>
+      
+        <div class="myapproach m-4"> 
+                <h1 class="A1">My<span style="color: rgb(13, 184, 13);"> Approach</span></h1>
+                <p class="a1">Collaboration lies at the heart of my process.
+                   I believe in working closely with clients and stakeholders to understand their goals and translate them into actionable strategies. By embracing innovation and staying abreast of industry trends,
+                   I ensure that my work remains cutting-edge and impactful</p>
+                <p style="color:black; font-weight: 500; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 280px;">
+                  Thank you for visiting my portfolio. I look forward to the possibility of working together.</p>
+        </div>
+          </div>
+
+        
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="skill text-center">Skills</h2>
-      <div class="row">
-        <!-- HTML Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">HTML</h5>
-              <p class="card-text">Proficient in writing semantic and well-structured HTML code.</p>
-            </div>
-          </div>
-        </div>
-        <!-- CSS Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">CSS</h5>
-              <p class="card-text">Skilled in CSS for styling web pages and creating responsive layouts.</p>
-            </div>
-          </div>
-        </div>
-        <!-- JavaScript Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">JavaScript</h5>
-              <p class="card-text">Proficient in JavaScript for adding interactivity and dynamic behavior to web pages.</p>
-            </div>
-          </div>
-        </div>
-        <!-- React Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">React</h5>
-              <p class="card-text">Experienced in building web applications using React framework.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Figma Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Figma</h5>
-              <p class="card-text">Proficient in using Figma for UI/UX design and collaboration.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Firebase Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Firebase</h5>
-              <p class="card-text">Experienced in Firebase for building and managing web and mobile applications.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Version Control Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Version Control</h5>
-              <p class="card-text">Proficient in using version control systems like Git for managing code versions and collaboration.</p>
-            </div>
-          </div>
-        </div>
-        <!-- VSCode Skill Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Visual Studio Code</h5>
-              <p class="card-text">Experienced in using VSCode as the primary code editor for web development projects.</p>
-            </div>
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="skill">Skills</h2>
+    <div class="row">
+       <!-- HTML Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">Proficient in writing semantic and well-structured HTML code.</p>
           </div>
         </div>
       </div>
+      <!-- CSS Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Skilled in CSS for styling web pages and creating responsive layouts.</p>
+          </div>
+        </div>
+      </div>
+      <!-- JavaScript Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Proficient in JavaScript for adding interactivity and dynamic behavior to web pages.</p>
+          </div>
+        </div>
+      </div>
+       <!-- React Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">React</h5>
+            <p class="card-text">Experienced in building web applications using React framework.</p>
+          </div>
+        </div>
+      </div>
+        <!-- Figma Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Figma</h5>
+            <p class="card-text">Proficient in using Figma for UI/UX design and collaboration.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Firebase Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Firebase</h5>
+            <p class="card-text">Experienced in Firebase for building and managing web and mobile applications.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Version Control Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Version Control</h5>
+            <p class="card-text">Proficient in using version control systems like Git for managing code versions and collaboration.</p>
+          </div>
+        </div>
+      </div>
+      <!-- VSCode Skill Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Visual Studio Code</h5>
+            <p class="card-text">Experienced in using VSCode as the primary code editor for web development projects.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center">My Projects</h2>
+      <h2 class="section-title">My Projects</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Restaurant Website</h5>
-              <p class="card-subtitle">FrontEnd Project</p>
-              <p class="card-text">Using HTML, CSS, JavaScript, React</p>
+              <h5 class="card-title">Restaurant Website<sub style="color: cadetblue; font-weight: 800;">FontEnd Project</sub></h5>
+              <p class="card-text">Using With <sub style="color:gray; font-weight: 600;">(JavaScript, HTML, CSS, React)</sub></p>
               <a href="https://little-lemon-self.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
             </div>
           </div>
@@ -288,9 +493,8 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Chatter Box Site</h5>
-              <p class="card-subtitle">BackEnd Project</p>
-              <p class="card-text">Using React, Firebase, Html, Sass style, Js</p>
+              <h5 class="card-title">Chatter Box Site <sub style="color: cadetblue; font-weight: 800;">BackEnd Project</sub></h5>
+              <p class="card-text"> Using With <sub style="color:gray; font-weight: 600;">(React, Firebase,Html,Sass style,Js)</sub></p>
               <a href="https://chatter-box-site-with-react.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
             </div>
           </div>
@@ -298,9 +502,8 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Portfolio</h5>
-              <p class="card-subtitle">Bootstrap Project</p>
-              <p class="card-text">Using Html, Css, Bootstrap</p>
+              <h5 class="card-title">Portfolio <sub style="color: cadetblue; font-weight: 800;">Bootstrap Project</sub></h5>
+              <p class="card-text">Using With <sub style="color:gray; font-weight: 600;">(Html,Css,Bootstrap)</sub></p>
               <a href="https://portfolio-bootstrap-satya-adabalas-projects.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
             </div>
           </div>
@@ -310,35 +513,38 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="container text-center">
+  <section id="contact" class="py-5">
+    <div class="container">
       <h2 class="section-title1">Contact Me</h2>
       <p class="section-title2">Please feel free to reach out to me via email or phone.</p>
       <ul class="section-title3">
-        <li>Email: <span>satya1adabala@gmail.com</span></li>
-        <li>Phone: <span>91+9515432936</span></li>
+        <li>Email: <span style="color:black;">satya1adabala@gmail.com</span></li>
+        <li>Phone: <span style="color: black;">91+9515432936</span></li>
       </ul>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="bg-dark text-white py-4">
     <div class="container text-center">
-      <p>&copy; 2024: Thank You visiting My Portfolio</p>
+      <p>&copy; 2024: ThankYou visiting My Portfolio</p>
     </div>
   </footer>
 
+ 
   <script>
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
+  
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
       });
     });
   </script>
+  
 
 </body>
 </html>
