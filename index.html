@@ -504,7 +504,7 @@ border-color: #5f9ea0;
             <div class="card-body">
               <h5 class="card-title">Portfolio <sub style="color: cadetblue; font-weight: 800;">Bootstrap Project</sub></h5>
               <p class="card-text">Using With <sub style="color:gray; font-weight: 600;">(Html,Css,Bootstrap)</sub></p>
-              <a href="#" class="btn btn-primary">View Project</a>
+              <a href="https://portfolio-bootstrap-satya-adabalas-projects.vercel.app/" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
@@ -530,6 +530,21 @@ border-color: #5f9ea0;
       <p>&copy; 2024: ThankYou visiting My Portfolio</p>
     </div>
   </footer>
+
+ 
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
 
 </body>
 </html>
