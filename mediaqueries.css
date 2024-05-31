@@ -56,6 +56,15 @@
       height: 83vh;
       margin-bottom: 0;
     }
+      #about {
+  position: static;
+}
+
+.about-containers {
+  gap: 1rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
     article {
       font-size: 1rem;
     }
