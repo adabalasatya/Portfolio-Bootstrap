@@ -56,6 +56,14 @@
       height: 83vh;
       margin-bottom: 0;
     }
+       #projects{
+      margin-top: 10px;
+    }
+       #about{
+      margin: 0px;
+      margin-top: 60px;
+    }
+      
     article {
       font-size: 1rem;
     }
