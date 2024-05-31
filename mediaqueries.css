@@ -86,7 +86,7 @@
           text-align: justify;
         }
       }
-      @media screen and (max-width:767px) {
+      @media screen and (max-width:768px) {
         .navbar-toggler-icon {
           margin-bottom: auto;
         }
@@ -101,3 +101,28 @@
           font-size: 2rem; 
         }
       }
+
+@media (max-width: 480px) {
+  /* Mobile styles */
+  body {
+    font-size: 12px;
+  }
+
+  #profile .section__text h1 {
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .icon.arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
