@@ -58,9 +58,11 @@
     }
       #about {
   position: static;
+           margin-top: 20px;
 }
 
 .about-containers {
+    gap:0px;
   margin-top: 20px;
 }
     article {
