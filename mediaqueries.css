@@ -26,7 +26,6 @@
     #profile,
     .section-container {
       display: block;
-         margin-bottom: 0;
     }
     .arrow {
       display: none;
@@ -52,20 +51,16 @@
     #contact,
     footer {
       height: 40vh;
-      margin-top: 15px; 
+      margin-top: 15px;
+    }
+
+    #about{
+      margin-top: 10px;
     }
     #profile {
       height: 83vh;
       margin-bottom: 0;
     }
-       #projects{
-      margin-top: 10px;
-    }
-       #about{
-      margin: 0px;
-      margin-top: 10px;
-    }
-      
     article {
       font-size: 1rem;
     }
@@ -114,15 +109,6 @@
 
 
   @media screen and (max-width:767px) {
-
-
-       #projects{
-      margin-top: 10px;
-    }
-       #about{
-      margin: 0px;
-      margin-top: 60px;
-    }
 
 
     navbar-toggler-icon{
