@@ -54,6 +54,10 @@
       margin-top: 15px;
     }
 
+      .about-containers {
+  margin-top: 1rem;
+}
+
       #projects{
           margin-top: 0px;
       }
