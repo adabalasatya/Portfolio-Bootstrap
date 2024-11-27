@@ -467,10 +467,16 @@ footer p {
     #about {
       position:relative;
     }
+
+    .about-pic{
+     height: 200px;
+      width: 300px;
+
+    }
     
     .about-containers {
       gap: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       margin-top: 5px;
     }
     
