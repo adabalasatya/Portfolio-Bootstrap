@@ -461,6 +461,6 @@ footer p {
 
 @media only screen and (max-width: 480px) {
   #about{
-    padding-top: 2px;
+    padding-top: 10px;
     }
 }
