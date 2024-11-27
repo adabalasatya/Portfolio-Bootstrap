@@ -33,28 +33,7 @@
         }
       }
       @media screen and (max-width: 600px) {
-
-        #profile {
-          height: auto;
-          margin: 0;
-          padding: 2rem 0;
-        }
-      
-        #about {
-          margin: 0;
-          padding: 2rem 0;
-        }
-      
-        section {
-          margin: 0;
-          padding: 0;
-        }
-      
-        .section-container {
-          padding: 1rem;
-        }
-      
-
+        
         #contact,
         footer {
           height: 40vh;
